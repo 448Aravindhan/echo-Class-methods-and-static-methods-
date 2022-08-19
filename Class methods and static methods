@@ -1,0 +1,29 @@
+class student:
+    fees=50000
+    def __init__(self, name,age,gender,department,program):   
+        self.name = name    
+        self.age = age
+        self.gender = gender
+        self.department = department
+        self.program = program
+
+      
+    def pay_fees(self,amount):
+        self.fees=self.fees-amount
+    
+    @classmethod
+    def change_fees(cls,amount):
+        cls.fees=amount
+    
+    
+    @staticmethod
+    def program(pgm):
+        available_pgm=['BE','B.Tech']
+        if pgm in available_pgm:
+            return True
+        return False
+
+stud1 = student('Aravind', 20, 'male', 'CSE','BE')  
+stud2 = student( 'raju', 22,'male', 'ECE', 'BE')
+
+print(student.program('B.Tech'))
