@@ -1,0 +1,1 @@
+# echo-Class-methods-and-static-methods-
